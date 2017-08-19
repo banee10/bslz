@@ -14,6 +14,11 @@
 		378C368C1F43357A008221C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378C368A1F43357A008221C3 /* LaunchScreen.storyboard */; };
 		378C36971F43357A008221C3 /* BSLZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C36961F43357A008221C3 /* BSLZTests.swift */; };
 		378C36A21F43357A008221C3 /* BSLZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C36A11F43357A008221C3 /* BSLZUITests.swift */; };
+		378C36B01F433991008221C3 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C36AF1F433991008221C3 /* NetworkingService.swift */; };
+		378C36B21F434E8E008221C3 /* Pocetna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C36B11F434E8E008221C3 /* Pocetna.swift */; };
+		378C36B41F435326008221C3 /* GetPocetnaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C36B31F435326008221C3 /* GetPocetnaResponse.swift */; };
+		378C36B61F4353B9008221C3 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C36B51F4353B9008221C3 /* NetworkingError.swift */; };
+		47DFEA04D4324210BE80DAFB /* Pods_BSLZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1681715D55A6A5CC89A2FFA2 /* Pods_BSLZ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5D834E41A6FC5ADAC83C61 /* Pods-BSLZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSLZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSLZ/Pods-BSLZ.release.xcconfig"; sourceTree = "<group>"; };
+		13A758D57FBCB84CFB53AF9D /* Pods-BSLZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSLZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSLZ/Pods-BSLZ.debug.xcconfig"; sourceTree = "<group>"; };
+		1681715D55A6A5CC89A2FFA2 /* Pods_BSLZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSLZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		378C367E1F43357A008221C3 /* BSLZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSLZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378C36811F43357A008221C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		378C36831F43357A008221C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		378C369D1F43357A008221C3 /* BSLZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSLZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		378C36A11F43357A008221C3 /* BSLZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSLZUITests.swift; sourceTree = "<group>"; };
 		378C36A31F43357A008221C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378C36AF1F433991008221C3 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		378C36B11F434E8E008221C3 /* Pocetna.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pocetna.swift; sourceTree = "<group>"; };
+		378C36B31F435326008221C3 /* GetPocetnaResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPocetnaResponse.swift; sourceTree = "<group>"; };
+		378C36B51F4353B9008221C3 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DFEA04D4324210BE80DAFB /* Pods_BSLZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36013048993F23288BFE00B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A758D57FBCB84CFB53AF9D /* Pods-BSLZ.debug.xcconfig */,
+				0B5D834E41A6FC5ADAC83C61 /* Pods-BSLZ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		378C36751F43357A008221C3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				378C36951F43357A008221C3 /* BSLZTests */,
 				378C36A01F43357A008221C3 /* BSLZUITests */,
 				378C367F1F43357A008221C3 /* Products */,
+				36013048993F23288BFE00B2 /* Pods */,
+				7B72D56A3B3AFD7D9E4D752F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,10 @@
 			children = (
 				378C36811F43357A008221C3 /* AppDelegate.swift */,
 				378C36831F43357A008221C3 /* ViewController.swift */,
+				378C36B31F435326008221C3 /* GetPocetnaResponse.swift */,
+				378C36B51F4353B9008221C3 /* NetworkingError.swift */,
+				378C36AF1F433991008221C3 /* NetworkingService.swift */,
+				378C36B11F434E8E008221C3 /* Pocetna.swift */,
 				378C36851F43357A008221C3 /* Main.storyboard */,
 				378C36881F43357A008221C3 /* Assets.xcassets */,
 				378C368A1F43357A008221C3 /* LaunchScreen.storyboard */,
@@ -125,6 +153,14 @@
 			path = BSLZUITests;
 			sourceTree = "<group>";
 		};
+		7B72D56A3B3AFD7D9E4D752F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1681715D55A6A5CC89A2FFA2 /* Pods_BSLZ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 378C36A61F43357A008221C3 /* Build configuration list for PBXNativeTarget "BSLZ" */;
 			buildPhases = (
+				18C49B0B70AADF20B93D2ABA /* [CP] Check Pods Manifest.lock */,
 				378C367A1F43357A008221C3 /* Sources */,
 				378C367B1F43357A008221C3 /* Frameworks */,
 				378C367C1F43357A008221C3 /* Resources */,
+				0123DC3DA03016ED675B6E0A /* [CP] Embed Pods Frameworks */,
+				01731726ADB0C7F4ABEB54E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,12 +296,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0123DC3DA03016ED675B6E0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BSLZ/Pods-BSLZ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSLZ/Pods-BSLZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		01731726ADB0C7F4ABEB54E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSLZ/Pods-BSLZ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18C49B0B70AADF20B93D2ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BSLZ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		378C367A1F43357A008221C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378C36B01F433991008221C3 /* NetworkingService.swift in Sources */,
 				378C36841F43357A008221C3 /* ViewController.swift in Sources */,
+				378C36B21F434E8E008221C3 /* Pocetna.swift in Sources */,
+				378C36B41F435326008221C3 /* GetPocetnaResponse.swift in Sources */,
+				378C36B61F4353B9008221C3 /* NetworkingError.swift in Sources */,
 				378C36821F43357A008221C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +510,7 @@
 		};
 		378C36A71F43357A008221C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A758D57FBCB84CFB53AF9D /* Pods-BSLZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 249HU89853;
@@ -426,6 +524,7 @@
 		};
 		378C36A81F43357A008221C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5D834E41A6FC5ADAC83C61 /* Pods-BSLZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 249HU89853;
@@ -514,6 +613,7 @@
 				378C36A81F43357A008221C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		378C36A91F43357A008221C3 /* Build configuration list for PBXNativeTarget "BSLZTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +622,7 @@
 				378C36AB1F43357A008221C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		378C36AC1F43357A008221C3 /* Build configuration list for PBXNativeTarget "BSLZUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +631,7 @@
 				378C36AE1F43357A008221C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

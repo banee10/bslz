@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BSLZ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meta title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJh-Z3-iB1">
+                                <rect key="frame" x="0.0" y="341.5" width="375" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="flt-X9-GNI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meta description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGN-Ww-Kqa">
+                                <rect key="frame" x="0.0" y="646.5" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meta keywords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKx-Z2-gjY">
+                                <rect key="frame" x="0.0" y="508.5" width="375" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="VU4-EY-NGG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OKx-Z2-gjY" firstAttribute="trailing" secondItem="ZGN-Ww-Kqa" secondAttribute="trailing" id="20M-CU-W0p"/>
+                            <constraint firstItem="WJh-Z3-iB1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Aag-xZ-qwQ"/>
+                            <constraint firstItem="ZGN-Ww-Kqa" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Mzo-ee-9zn"/>
+                            <constraint firstItem="OKx-Z2-gjY" firstAttribute="leading" secondItem="ZGN-Ww-Kqa" secondAttribute="leading" id="WuM-Xq-FBL"/>
+                            <constraint firstItem="ZGN-Ww-Kqa" firstAttribute="top" secondItem="OKx-Z2-gjY" secondAttribute="bottom" constant="8" symbolic="YES" id="hef-9r-7wY"/>
+                            <constraint firstAttribute="trailing" secondItem="WJh-Z3-iB1" secondAttribute="trailing" id="lKn-X7-7P7"/>
+                            <constraint firstItem="WJh-Z3-iB1" firstAttribute="leading" secondItem="OKx-Z2-gjY" secondAttribute="leading" id="pEO-Ef-qNQ"/>
+                            <constraint firstItem="OKx-Z2-gjY" firstAttribute="top" secondItem="WJh-Z3-iB1" secondAttribute="bottom" constant="8" symbolic="YES" id="x6h-LA-w3B"/>
+                            <constraint firstItem="WJh-Z3-iB1" firstAttribute="trailing" secondItem="OKx-Z2-gjY" secondAttribute="trailing" id="zT3-Cw-LQc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="metaDescriptionLbl" destination="ZGN-Ww-Kqa" id="1Vc-8R-bzC"/>
+                        <outlet property="metaKeywordsLbl" destination="OKx-Z2-gjY" id="yY6-L7-yIl"/>
+                        <outlet property="metaTitleLbl" destination="WJh-Z3-iB1" id="D1W-DZ-Gu4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
